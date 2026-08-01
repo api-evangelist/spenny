@@ -1,7 +1,23 @@
 aid: spenny
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/spenny.png
 name: Spenny
-description: Spenny is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Spenny is an Indian personal-finance and micro-investing app that works like a digital
+  piggy bank, rounding up everyday spending on cards, UPI, and netbanking and automatically investing
+  the spare change. Users can put round-ups and lump sums (from as little as Rs. 10) into digital gold
+  and curated mutual fund baskets, with no lock-ins and anytime withdrawals. Spenny is a consumer mobile
+  application and does not currently publish a public developer API, documentation, or developer portal.
+  Backed by 500 Global.
 url: https://raw.githubusercontent.com/api-evangelist/spenny/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,15 +27,30 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Fintech
+- Personal Finance
+- Micro-Investing
+- Savings
+- Mutual Funds
+- Digital Gold
+- India
+- Consumer App
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 common:
+- type: DomainSecurity
+  url: security/spenny-domain-security.yml
 - type: Website
   url: https://spenny.com
